@@ -1,0 +1,50 @@
+.contact {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 30px 20px;
+  background-color: #f3f3f3;
+}
+.contact__title {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+.contact__description {
+  margin-top: 25px;
+  width: 100%;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.contact__item {
+  margin-top: 25px;
+  align-items: center;
+  display: flex;
+  letter-spacing: 1px;
+  font-size: 1.4rem;
+  & a {
+    text-decoration: none;
+    color: #333333;
+  }
+  & a svg {
+    height: 40px;
+    margin-right: 20px;
+  }
+}
+@media (min-width: 600px) {
+  .contact__title {
+    font-size: 3.4rem;
+  }
+  .contact__description {
+    font-size: 2.2rem;
+  }
+  .contact__item {
+    font-size: 1.8rem;
+    & a svg {
+      height: calc(40px * 1.5);
+    }
+  }
+}

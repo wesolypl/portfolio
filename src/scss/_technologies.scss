@@ -1,0 +1,82 @@
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  height: 100vh;
+  padding: 30px 20px;
+  background: url("../img/City.jpg") no-repeat;
+  background-size: cover;
+}
+.technologies__item {
+  flex-basis: 30%;
+  text-align: center;
+  & svg {
+    height: 76px;
+    max-height: 90%;
+    color: #ffffff;
+  }
+  & p {
+    color: #ffffff;
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+  }
+}
+.technologies__item:nth-child(1) {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: white;
+}
+.technologies__item:nth-child(1),
+.technologies__item:nth-last-child(1) {
+  flex-basis: 100%;
+}
+.technologies__item:nth-last-child(2) {
+  & p {
+    margin-top: 3px;
+    width: 100%;
+    letter-spacing: 1px;
+  }
+}
+.technologies__item--adobe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 76px;
+  height: 76px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  & p {
+    color: #414345;
+    font-size: 4.2rem;
+    line-height: 42px;
+  }
+}
+@media (min-width: 600px) {
+  .technologies__item {
+    flex-basis: 24%;
+    & svg {
+      height: calc(76px * 1.5);
+    }
+    & p {
+      font-size: 2rem;
+    }
+  }
+  .technologies__item:nth-child(1) {
+    font-size: 3.4rem;
+  }
+  .technologies__item:nth-last-child(2) {
+    flex-grow: 1;
+  }
+  .technologies__item--adobe {
+    height: calc(76px * 1.5);
+    width: calc(76px * 1.5);
+    & p {
+      font-size: calc(4.2rem * 1.5);
+    }
+  }
+}

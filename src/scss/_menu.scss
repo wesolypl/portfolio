@@ -1,0 +1,82 @@
+.menu {
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 50px;
+  background-color: #232526;
+  z-index: 1;
+  & svg {
+    width: 25px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #ffffff;
+    z-index: 10;
+    cursor: pointer;
+  }
+}
+.menu__logo {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  width: 60px;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.2s;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.menu__logo--hidden {
+  transform: translate(-500%, -50%);
+}
+.menu__nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px 0;
+  width: 100vw;
+  height: 100vh;
+  background: url("../img/City.jpg") no-repeat;
+  background-size: cover;
+  transition: 0.5s;
+  z-index: 9;
+}
+.menu__nav--hidden {
+  position: fixed;
+  top: 0;
+  left: 200%;
+  width: 100%;
+  height: 100vh;
+}
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  & > .list__item {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 3.2rem;
+    cursor: pointer;
+  }
+}
+@media (min-width: 600px) {
+  .menu {
+    & svg {
+      width: 36px;
+    }
+  }
+  .menu__logo {
+    font-size: 2.8rem;
+    line-height: 2.6rem;
+  }
+}

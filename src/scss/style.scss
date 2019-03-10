@@ -1,0 +1,24 @@
+@import "wrapper";
+@import "menu";
+@import "home";
+@import "about";
+@import "portfolio";
+@import "technologies";
+@import "contact";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+html {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 5px;
+  font-size: 10px;
+  color: #333333;
+}
+body {
+  overflow-x: hidden;
+}
